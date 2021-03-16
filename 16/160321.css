@@ -1,0 +1,294 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(155, 78, 78);
+}
+
+h1, h2, h3 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    color:rgb(155, 78, 78);
+}
+.coluna{
+    float: left;
+    width: 33.33%;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.botao{
+    color:#F5DEB3;
+    text-decoration: none;
+    padding:1px 3px;
+    background-color:rgb(155, 78, 78);
+    font-size:15px;
+    border-radius:1px; }
+
+ nav{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: 	#F5DEB3;
+    
+ }
+
+ nav > a {
+     
+    text-decoration: none;
+    color:rgb(155, 78, 78);
+    font-weight: 80;
+    font-size: 32px;
+    font-family: fantasy;
+ }
+
+ nav ul{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     list-style: none;
+     padding: 0;
+     width: 100%;   
+ }
+
+ nav ul li{
+            text-align: center;
+            width: 100%;
+        
+ }
+ nav ul li a {
+                display: inline-block;
+                padding: 10px 0;
+                width: 100%;
+                text-decoration: none;
+                color:rgb(155,78,78);
+ }
+
+ header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            background-image: url("../img/gigante.JPG");
+            background-size:cover;
+            background-position: center;
+            color:rgb(155, 78, 78);
+            text-align: right;
+            padding: 50px;
+
+}
+    header h1{
+        color:rgb(155, 78, 78)
+    }
+    header p{
+        margin-bottom: 2em;
+    }
+
+    #sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 10px 20px 20px;
+        background-color:#F5DEB3;
+        color:rgb(155, 78, 78);
+    }
+
+    #sobre h2 {
+        color:rgb(155, 78, 78);
+    }
+
+    #sobre p {
+        margin-bottom :2.5em;
+        max-width: 1000px;
+    }
+
+    #sobre .botao{
+        background-color: rgb(red, green, blue);
+        color: #000000;
+
+    }
+
+    #produtos{
+        display: flex;
+        flex-direction: column;
+        align-items: justify;
+        text-align: justify;
+        padding: 10px 10px 20px 20px;
+        background-color: #F5DEB3;
+        color:rgb(155, 78, 78);
+    }
+
+    #produtos div{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #contato{
+        display:ruby-base-container;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    #contato h2{
+        color:rgb(155, 78, 78);   
+    }
+
+    #contato #telefone
+
+    footer{
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        color:rgb(0, 0, 0);
+    }
+
+    footer a{
+            text-decoration: none;
+            color:rgb(0, 0, 0);
+    }
+
+    #vejamais{
+        display: flex;
+        flex-direction: column;
+        align-items: justify;
+        text-align: justify;
+        padding: 10px 10px 20px 20px;
+        background-color: #F5DEB3;
+        color:rgb(155, 78, 78);
+    }
+
+    @media screen and (min-width:768px) {
+        nav{
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        nav ul {
+            
+            flex-direction: row;
+            width: 70%
+        }
+
+        header{
+            height: 600px;
+            height: 60vh;
+            justify-content: center;
+        }
+
+        #sobre{
+            height: 500px;
+            height: 100vh;
+            justify-content: center;
+            min-height: 250px;
+        }
+
+        #produtos {
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #produtos #perfumaria{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #produtos #alcoolemgel{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            text-align: center;
+            margin-top: 30px;
+        }
+        #produtos #hidratantes{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        #produtos h2 {
+            text-align: center;
+            width: 100%;
+        }
+
+        #produtos div {
+            flex-grow: 4;
+            flex-basis: 200px;
+            padding:0 50px;
+        }
+        
+        #vejamais #imagens {
+            text-align: center;
+            margin-right: 0;
+        }
+        #vejamais #video {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items:flex-end;
+            max-width: 900px;
+            
+            }
+
+        #contato {
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            max-width: 1000px;
+            margin: 0 auto;
+            }
+        
+            #contato h2, #contato p {
+                width: 100%;
+                
+            }
+    
+            #contato #telefone{
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items:center;
+                max-width: 200px;
+                margin: 0 auto;
+            }
+            #contato #email{
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items:center;
+                max-width: 200px;
+                margin: 0 auto;
+            }
+            #contato #instagram{
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items:center;
+            max-width: 200px;
+            margin: 0 auto;
+            }
+            #contato #facebook{
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items:center;
+                max-width: 200px;
+                margin: 0 auto;
+                }
+                
+        #footer{
+            flex-direction: row;
+            flex-wrap:initial;
+            align-items:center;
+            max-width: 200px;
+            margin: 0 auto;
+            }
+        }
